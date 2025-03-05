@@ -1,0 +1,27 @@
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+caption {
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+th {
+    background-color: #f2f2f2;
+}

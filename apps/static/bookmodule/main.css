@@ -1,0 +1,90 @@
+/* Main CSS for Lab 5 - Similar to Lab 4 */
+
+/* Add a background color to the top navigation */
+.topnav {
+    background-color: #eeeeee;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    color: #000000;
+    text-align: center;
+    margin-right: 25px;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  
+  /* Add styles for different link states */
+  .topnav a:hover {
+    color: #ffffff;
+    background-color: #008CBA;
+    border-radius: 5px;
+  }
+  
+  .topnav a:visited {
+    color: #555555;
+  }
+  
+  .topnav a:active {
+    color: #ff6600;
+  }
+  
+  /* Additional styles for Lab 5 tasks */
+  a {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  /* Specific styles for different links */
+  .link-container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .link-container a:nth-child(1) {
+    background-color: #bfffbf;
+    color: red;
+    font-weight: bold;
+  }
+  
+  .link-container a:nth-child(2) {
+    background-color: #555555;
+    color: yellow;
+    font-weight: bold;
+  }
+  
+  .link-container a:nth-child(3) {
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Table styling */
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+  }
+  
+  td, th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #008CBA;
+    color: white;
+  }
+  
