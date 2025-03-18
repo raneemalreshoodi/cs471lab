@@ -1,5 +1,31 @@
 from django.shortcuts import render  # Add this import
 from django.http import HttpResponse
+from .models import Book
+
+
+
+
+def simple_query(request):
+
+    books = Book.objects.filter(title__icontains='and')
+    return render(request, 'bookmodule/bookList.html', {'books': books})
+
+
+def complex_query(request):
+    
+    expensive_books = Book.objects.filter(price__gt=100)
+    return render(request, 'bookmodule/bookList2.html', {'books': expensive_books})
+
+def lookup_query(request):
+    mybooks = Book.objects.filter(author__isnull=False) \
+                          .filter(title__icontains='The') \
+                          .filter(edition__gte=2) \
+                          .exclude(price__lte=20)[:10]
+
+    if len(mybooks) > 1:
+        return render(request, 'bookmodule/lookup.html', {'books': mybooks})
+    else:
+        return render(request, 'bookmodule/index.html')
 
 
 def index2(request, val1=0):
