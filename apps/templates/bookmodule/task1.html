@@ -1,6 +1,16 @@
-<h1>Books with Price Less Than or Equal to 50</h1>
-<ul>
-    {% for book in books %}
-        <li>{{ book.title }} - ${{ book.price }}</li>
-    {% endfor %}
-</ul>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Departments and Student Counts</title>
+</head>
+<body>
+    <h1>Departments and Number of Students</h1>
+    <ul>
+        {% for dept in departments %}
+            <li>{{ dept.name }} - {{ dept.num_students }} students</li>
+        {% empty %}
+            <li>No departments found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

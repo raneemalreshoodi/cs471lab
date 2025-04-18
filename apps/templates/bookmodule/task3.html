@@ -1,6 +1,6 @@
-<h1>Books with No Editions Higher Than 2 and No 'qu' in Title or Author</h1>
+<h2>Oldest Student by Department</h2>
 <ul>
-    {% for book in books %}
-        <li>{{ book.title }} - {{ book.author }} - Edition: {{ book.edition }}</li>
-    {% endfor %}
+  {% for row in data %}
+    <li>{{ row.department }}: {{ row.student }}</li>
+  {% endfor %}
 </ul>
